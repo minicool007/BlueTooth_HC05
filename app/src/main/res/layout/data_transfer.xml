@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ff808080"/>
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:background="#ffffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/it1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_item1"
+            android:checked="true"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="数据测试"
+            android:textColor="@drawable/tab_selector_check_back" />
+        <RadioButton
+            android:id="@+id/it2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_item2"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="姿态信息"
+            android:textColor="@drawable/tab_selector_check_back" />
+        <RadioButton
+            android:id="@+id/it3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_item3"
+            android:typeface="normal"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="PID调试"
+            android:textColor="@drawable/tab_selector_check_back" />
+        <RadioButton
+            android:id="@+id/it4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_item4"
+            android:typeface="normal"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="自动巡航"
+            android:textColor="@drawable/tab_selector_check_back" />
+    </RadioGroup>
+</LinearLayout>

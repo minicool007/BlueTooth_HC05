@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id = "@+id/container"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<ListView
+		android:id="@+id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollingCache="false"
+		android:divider="#ffc6c6c6"
+		android:layout_weight="1.0" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id= "@+id/edit_bottombar"
+		android:layout_alignParentBottom = "true">
+
+		<Button android:id="@+id/btn_msg_send"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft ="true"
+			android:text="测试数据"/>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height = "wrap_content"
+			android:hint = "请输入十六进制数据"
+			android:textSize="15dip"
+			android:id = "@+id/MessageText"/>
+
+	</LinearLayout>
+
+</LinearLayout>

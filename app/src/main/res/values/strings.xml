@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">飞控界面</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="on">打开蓝牙</string>
+    <string name="off">关闭蓝牙</string>
+    <string name="Visible">打开界面</string>
+    <string name="List">开始搜索</string>
+
+</resources>
